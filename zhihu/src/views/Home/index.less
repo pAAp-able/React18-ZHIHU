@@ -1,0 +1,100 @@
+.home_box {
+
+    //轮播图
+    .swiper-box {
+        box-sizing: border-box;
+        width: 750px;
+        height: 750px;
+        background-color: #ddd;
+
+        .adm-swiper {
+            height: 100%;
+        }
+
+        a {
+            display: block;
+            height: 100%;
+        }
+
+        .adm-image,
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+
+            .adm-image-tip {
+                svg {
+                    width: 20%;
+                    height: 20%;
+                }
+            }
+        }
+
+        .desc {
+            //background-color: rgba(255, 255, 255, .4);
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 30px;
+
+            .title {
+                font-size: 36px;
+                color: white;
+
+            }
+
+            .author {
+                font-size: 24px;
+                color: rgba(255, 255, 255, .7);
+                line-height: 50px;
+            }
+        }
+
+        .adm-swiper-indicator {
+            bottom: 20px;
+            left: auto;
+            right: 0;
+            transform: translateX(-30px);
+
+            .adm-page-indicator-dot {
+                width: 12px;
+                height: 12px;
+                color: rgba(255, 255, 255, .7);
+                border-radius: 6px;
+                margin: 0 6px;
+
+                &.adm-page-indicator-dot-active {
+                    width: 36px;
+                    background-color: #fff;
+                }
+            }
+        }
+
+
+    }
+
+    //加载更多
+    .loading-box {
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        //background-color: #eee;
+        font-size: 24px;
+        color: #999;
+    }
+
+    //新闻列表
+    .new_box {
+        padding: 10px 30px;
+
+        .adm-divider-left.adm-divider-horizontal::before {
+            max-width: 2%;
+        }
+
+        .adm-divider-content {
+            font-size: 30px;
+        }
+    }
+}
